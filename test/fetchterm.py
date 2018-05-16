@@ -51,6 +51,14 @@ for form in soup.find_all("form"):
             form_data["rec_dur"] = value
     data.append(form_data)
 
+import datetime
+# Import to keep track when we updated for the users and the developer to know when to force an update or change the update rate
+# FIXME Make last_updated timezone aware, or respect unix timestamp
+data = {
+    "last_updated": str(datetime.datetime.now()),
+    "data": data
+}
+
 import json
 
 with open("term.json", "w") as outfile:
