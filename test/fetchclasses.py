@@ -127,10 +127,14 @@ num_item = len(courses)
 course_info = []
 for course in courses:
     if all(key in course for key in ("strm", "class_nbr", "term")):
-        course_info.append(fetch_class(
-            course["strm"], course["class_nbr"], course["term"]))
-        curr_item += 1
-        print("Progress {0}/{1}\r".format(curr_item, num_item), end="")
+        try:
+            course_info.append(fetch_class(
+                course["strm"], course["class_nbr"], course["term"]))
+            curr_item += 1
+            print("Progress {0}/{1}\r".format(curr_item, num_item), end="")
+        except:
+            print("Failed: ")
+            print(course)
 
 all_course_info = {
     "data": course_info,
