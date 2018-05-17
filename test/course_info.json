@@ -1,0 +1,101 @@
+{
+    "desc": [
+        "Introduction to statistical methods/reasoning, including descriptive methods, data-gathering (experimental design and sample surveys), probability, interval estimation, significance tests, one- and two-sample problems, categorical data analysis, correlation and regression. Emphasis on applications to the natural and social sciences. Students cannot receive credit for this course if they have already received credit for course 7.",
+        "Enroll in lecture and associated discussion section"
+    ],
+    "detail": {
+        "Available Seats": "1",
+        "Career": "Undergraduate",
+        "Class Number": "21608",
+        "Credits": "5 units",
+        "Enrolled": "249",
+        "Enrollment Capacity": "250",
+        "General Education": "SR",
+        "Grading": "Student Option",
+        "Status": " Open",
+        "Type": "Lecture",
+        "Wait List Capacity": "0",
+        "Wait List Total": "0"
+    },
+    "meeting_info": {
+        "Days & Times": "TuTh 03:20PM-04:55PM",
+        "Instructor": "Mendes,B.S.",
+        "Meeting Dates": "09/28/17 - 12/08/17",
+        "Room": "Earth&Marine; B206"
+    },
+    "section_and_labs": [
+        [
+            "#21609 DIS 01A",
+            "Tu 08:00AM-09:35AM",
+            "Regalado,J.N.",
+            "Loc: J Baskin Engr 372",
+            "Enrl: 32 / 35",
+            "Wait: 0 / 0",
+            "Open"
+        ],
+        [
+            "#21610 DIS 01B",
+            "Tu 11:40AM-01:15PM",
+            "Kalra,C.S.",
+            "Loc: J Baskin Engr 372",
+            "Enrl: 35 / 35",
+            "Wait: 0 / 0",
+            "Closed"
+        ],
+        [
+            "#21611 DIS 01C",
+            "Th 08:00AM-09:35AM",
+            "Regalado,J.N.",
+            "Loc: J Baskin Engr 372",
+            "Enrl: 33 / 35",
+            "Wait: 0 / 0",
+            "Open"
+        ],
+        [
+            "#21612 DIS 01D",
+            "Th 11:40AM-01:15PM",
+            "Kalra,C.S.",
+            "Loc: J Baskin Engr 372",
+            "Enrl: 35 / 35",
+            "Wait: 0 / 0",
+            "Closed"
+        ],
+        [
+            "#21613 DIS 01E",
+            "W 05:20PM-06:55PM",
+            "Staff",
+            "Loc: J Baskin Engr 372",
+            "Enrl: 34 / 35",
+            "Wait: 0 / 0",
+            "Open"
+        ],
+        [
+            "#21614 DIS 01F",
+            "W 07:10PM-08:45PM",
+            "Zhao,C.",
+            "Loc: J Baskin Engr 372",
+            "Enrl: 29 / 35",
+            "Wait: 0 / 0",
+            "Open"
+        ],
+        [
+            "#21615 DIS 01G",
+            "M 05:20PM-06:55PM",
+            "Staff",
+            "Loc: J Baskin Engr 372",
+            "Enrl: 35 / 35",
+            "Wait: 0 / 0",
+            "Closed"
+        ],
+        [
+            "#21616 DIS 01H",
+            "M 07:10PM-08:45PM",
+            "Zhao,C.",
+            "Loc: J Baskin Engr 372",
+            "Enrl: 16 / 35",
+            "Wait: 0 / 0",
+            "Open"
+        ]
+    ],
+    "title": "AMS 5 - 01\u00a0\u00a0 Statistics"
+}
