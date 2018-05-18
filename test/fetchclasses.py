@@ -76,6 +76,14 @@ def find_course_desc_and_class_notes(soup):
         text = panel_bodies[i].find(text=True, recursive=False).strip()
         if len(text) > 0:
             desc.append(text)
+        
+    # Hack
+    if len(desc) == 0:
+        desc.append("")
+        desc.append("")
+    elif len(desc) == 1:
+        desc.append("")
+
     return desc
 
 
@@ -143,3 +151,4 @@ all_course_info = {
 
 with open("course_info.json", "w") as outfile:
     json.dump(all_course_info, outfile, sort_keys=True, indent=4)
+
