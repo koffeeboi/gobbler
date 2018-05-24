@@ -1,13 +1,13 @@
 def get_value(dict, key):
     # Integer field
     if key in ["Available Seats", "Class Number", "Enrolled", "Enrollment Capacity",
-                "Wait List Capacity", "Wait List Total", ]:
+               "Wait List Capacity", "Wait List Total", ]:
         if key in dict:
             return int(dict[key])
         else:
             return 0
 
-    # Char field 
+    # Char field
     if key in dict:
         return dict[key]
     else:
@@ -17,17 +17,21 @@ def get_value(dict, key):
 def format_to_fixture(all_course_info):
     formatted = []
 
+    lab_index_key = 1
+
     courses = all_course_info["data"]
     for i in range(len(courses)):
         course = courses[i]
         index_key = i + 1  # Start index at 1 for django pk
         if all(key in course for key in ("desc", "detail", "meeting_info", "section_and_labs")):
             section_or_lab_exists = False
-            
+
             for section_or_lab in course["section_and_labs"]:
                 section_or_lab_exists = True
 
                 sec_lab_fields = {}
+                sec_lab_fields["course_num"] = get_value(
+                    course["detail"], "Class Number")
                 sec_lab_fields["class_id"] = section_or_lab[0]
                 sec_lab_fields["time"] = section_or_lab[1]
                 sec_lab_fields["instructor"] = section_or_lab[2]
@@ -38,9 +42,12 @@ def format_to_fixture(all_course_info):
 
                 sec_lab = {}
                 sec_lab["model"] = "api.sectionlab"
-                sec_lab["pk"] = index_key
+                sec_lab["pk"] = lab_index_key
                 sec_lab["fields"] = sec_lab_fields
+
                 formatted.append(sec_lab)
+                lab_index_key += 1 
+
 
             course_fields = {}
             course_fields["title"] = get_value(course, "title")
